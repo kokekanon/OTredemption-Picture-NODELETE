@@ -8,12 +8,12 @@
 
 2. [Creature](#creature)
 
-   2.1. [UICreature](#ui-creature)
+   2.1. [UIcreature](#uicreature)
 
-   2.2. [Creature](#creature-details)
+   2.2. [Creature](#creature2)
 
 3. [Widget](#widget)
-4. [Particles](#particles)
+4. [Particle](#Particle)
 5. [Server Connection](#connection)
 
 
@@ -146,7 +146,7 @@ _onDetach_
 
 # <a name="creature"> 2.- Creature</a>
 
-###   <a name="UIcreature">    - 2.1. UIcreature:</a>
+###   <a name="uicreature">    - 2.1. UIcreature:</a>
  
 
 ```lua
@@ -197,7 +197,7 @@ tile:attachWidget(widget)
 
 <video src="https://github.com/Nottinghster/otclient/assets/114332266/9ee58399-5832-42e3-acc9-f15c6cd831fd" width="600" controls></video>
 
-# <a name="particules"> 4.- Particules</a>
+# <a name="Particle"> 4.- Particle</a>
 ```lua
 g_game.getLocalPlayer():attachParticleEffect("creature-effect")
 ```
@@ -205,7 +205,7 @@ g_game.getLocalPlayer():attachParticleEffect("creature-effect")
 
 
 
-# <a name="Connection"> 5.- Server Connection</a>
+# <a name="connection"> 5.- Server Connection</a>
 ##   - 5.1. TFS  : Optimized tfs by SaiyansKing https://github.com/mehah/forgottenserver-optimized
 
 `creature:attachEffectById(<effect id>, <temporary>(true | false)) -- Temporary = does not save in character`
