@@ -165,7 +165,7 @@ UICreature:getCreature():attachEffect(g_attachedEffects.getById(ID))
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/UIcreature.png?raw=true" > 
 
-###   <a name="Creature2">    - 2.2. Creature:</a>
+###   <a name="creature2">    - 2.2. Creature:</a>
 
 ```lua
 local creature = g_map.getCreatureById(Creature_ID)
