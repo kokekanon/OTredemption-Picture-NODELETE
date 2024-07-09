@@ -13,6 +13,12 @@
    2.2. [Creature](#creature2)
 
 3. [Widget](#widget)
+
+   2.1. [Tile Widget](#widgettile)
+
+   2.2. [Creature Widget](#widgetcreature)
+
+
 4. [Particle](#Particle)
 5. [Server Connection](#connection)
 
@@ -134,7 +140,7 @@ _drawOrder_
 
 _bounce_
 
-<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_bounce_.gif?raw=true" > 
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/bones.gif?raw=true" > 
 
 _onAttach_
 
@@ -178,11 +184,11 @@ end
 ```lua
  g_game.getLocalPlayer():attachEffect(g_attachedEffects.getById(ID))
 ```
-
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/bones.gif?raw=true" > 
 
 # <a name="widget"> 3.- Widget</a>
 
-
+###   <a name="widgettile">    - 3.1. Tile Widget:</a>
 ```lua
 local tile = g_map.getTile(g_game.getLocalPlayer():getPosition())
 local widget = g_ui.createWidget('Panel')
@@ -195,7 +201,21 @@ tile:attachWidget(widget)
 ```
 
 
-<video src="https://github.com/Nottinghster/otclient/assets/114332266/9ee58399-5832-42e3-acc9-f15c6cd831fd" width="600" controls></video>
+
+
+###   <a name="widgetcreature">    - 3.2. Creature Widget:</a>
+```lua
+local widget = g_ui.createWidget('Panel')
+widget:setTextAutoResize(true)
+widget:setText("Yes you can Deux!!! ;)")
+widget:setFont("terminus-10px")
+widget:setBackgroundColor('red')
+widget:setColor('black')
+widget:setMarginBottom(40)
+widget:setFontScale(3)
+g_game.getLocalPlayer():attachWidget(widget)
+```
+
 
 # <a name="Particle"> 4.- Particle</a>
 ```lua
