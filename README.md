@@ -79,11 +79,6 @@ _shader_
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_shader_.gif?raw=true" > 
 
-
-_drawOnUI_
-
-`coming soon`
-
 _opacity_
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_opacity_.gif?raw=true" > 
@@ -91,7 +86,7 @@ _opacity_
 
 _duration_
 
-`coming soon`
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/duration.gif?raw=true" > 
 
 _transform_
 
@@ -113,10 +108,7 @@ _size (only textures)_
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_size_.gif?raw=true" > 
 
 
-_offset (only textures)_
-
-`coming soon`
-
+_offset (only textures)_ // 
 
 _dirOffset_ (only ThingCategoryCreature , ThingCategoryEffect)
 
@@ -130,25 +122,11 @@ vertical
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/vertical.gif?raw=true" > 
 
-_light_
-
-`coming soon`
-
-_drawOrder_
-
-`coming soon`
 
 _bounce_
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/bones.gif?raw=true" > 
 
-_onAttach_
-
-`coming soon`
-
-_onDetach_
-
-`coming soon`
 
 # <a name="creature"> 2.- Creature</a>
 
@@ -200,7 +178,7 @@ widget:setMarginBottom(40)
 tile:attachWidget(widget)
 ```
 
-
+![image](https://raw.githubusercontent.com/kokekanon/OTredemption-Picture-NODELETE/main/Picture/Attached%20Effect/Tile/002_widget.png?raw=true)
 
 
 ###   <a name="widgetcreature">    - 3.2. Creature Widget:</a>
@@ -218,12 +196,18 @@ g_game.getLocalPlayer():attachWidget(widget)
 
 
 # <a name="Particle"> 4.- Particle</a>
+
+###   <a name="particlecreature">    - 4.1. Creature Widget:</a>
 ```lua
 g_game.getLocalPlayer():attachParticleEffect("creature-effect")
 ```
 ![image](https://github.com/kokekanon/OTredemption-Picture-NODELETE/raw/main/Picture/Attached%20Effect/Creature/003_particula.gif?raw=true)
 
-
+###   <a name="particletile">    - 4.2. Tile Widget:</a>
+```lua
+g_map.getTile(g_game.getLocalPlayer():getPosition()):attachParticleEffect("creature-effect")
+```
+![image](https://github.com/kokekanon/OTredemption-Picture-NODELETE/raw/main/Picture/Attached%20Effect/Tile/003_particulas.gif?raw=true)
 
 # <a name="connection"> 5.- Server Connection</a>
 ##   - 5.1. TFS  : Optimized tfs by SaiyansKing https://github.com/mehah/forgottenserver-optimized
@@ -257,4 +241,6 @@ creature:attachEffectById(effectId, [temporary])
     g_game.enableFeature(GameCreatureAttachedEffect) 
 
 ```
-##   - 5.3. Canary 13.32 : 
+
+##   - 5.3. TFS 1.4.2 : https://github.com/kokekanon/TFS-1.4.2-Compatible-Aura-Effect-Wings-Shader-MEHAH
+##   - 5.4. Canary 13.32 : 
