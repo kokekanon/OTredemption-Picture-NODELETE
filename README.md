@@ -48,15 +48,18 @@ https://github.com/mehah/otclient/blob/main/modules/game_attachedeffects/effects
 
 ```lua
 --[[`
-    `register(id, name, thingId, thingType, config)`
-    `config = {`
-        `speed, disableWalkAnimation, shader, drawOnUI, opacity`
-        `duration, loop, transform, hideOwner, size{width, height}`
-        `offset{x, y, onTop}, dirOffset[dir]{x, y, onTop},`
-        `light { color, intensity}, drawOrder(only for tiles),`
-        `bounce{minHeight, height, speed}`
-        `onAttach, onDetach`
-    `}`
+    register(id, name, thingId, thingType, config)
+    config = {
+        speed, disableWalkAnimation, shader, drawOnUI, opacity
+        duration, loop, transform, hideOwner, size{width, height}
+        offset{x, y, onTop}, dirOffset[dir]{x, y, onTop},
+        light { color, intensity}, drawOrder(only for tiles),
+        bounce{minHeight, height, speed},
+        pulse{minHeight, height, speed},
+        fade{start, end, speed}
+
+        onAttach, onDetach
+    }
 `]]
 ```
 --
@@ -66,6 +69,14 @@ _speed_:
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_speed_.gif?raw=true" > 
 
+
+_fade_:
+
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/fade_1.gif?raw=true" > 
+
+_pulse_:
+
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/pulsework_1.gif?raw=true" > 
 
 
 
@@ -103,25 +114,33 @@ _hideOwner_
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_hideOwner_.gif?raw=true" > 
 
 
-_size (only textures)_
+_size_
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/_size_.gif?raw=true" > 
 
 
-_offset (only textures)_ // 
 
-_dirOffset_ (only ThingCategoryCreature , ThingCategoryEffect)
 
-horizontal
+
+_offset_
+
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/offset_1.gif?raw=true" > 
+
+_dirOffset_ (offset depends on the direction of the character)
+
+- horizontal
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/horizontal.gif?raw=true" > 
 
 
 
-vertical
+- vertical
 
 <img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/vertical.gif?raw=true" > 
 
+_front/back_:
+
+<img src="https://github.com/kokekanon/OTredemption-Picture-NODELETE/blob/main/Wiki/aebolean.gif?raw=true" > 
 
 _bounce_
 
@@ -243,4 +262,5 @@ creature:attachEffectById(effectId, [temporary])
 ```
 
 ##   - 5.3. TFS 1.4.2 : https://github.com/kokekanon/TFS-1.4.2-Compatible-Aura-Effect-Wings-Shader-MEHAH
-##   - 5.4. Canary 13.32 : 
+
+##   - 5.4. Canary 13.40 : 
